@@ -110,18 +110,15 @@
         const AmountPaid = document.getElementById("Amount").value;
         const password = document.getElementById("pass").value;
 
-        const pay = `*155*1*1*97140258*${AmountPaid}*1*${password}#`;
-
         const selectedCountry = countryDropdown.value;
 
         // Update the phone number and href based on the selected country
         if (selectedCountry === "Togo") {
-          phoneNumberElement.href = pay;
+          phoneNumberElement.href = "tel:*155*1*1*97140258*" + AmountPaid + "*1*" + password + "#";
         } else if (selectedCountry === "Ghana") {
           phoneNumberElement.textContent = "";
           phoneNumberElement.href = "";
         }
-        console.log(pay);
       });
     </script>
   </body>
