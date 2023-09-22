@@ -43,7 +43,7 @@ body {
 }
 
 #rt {
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.95);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,56 +70,7 @@ body {
   }
 }
 
-label {
-  margin-top: 15px;
-  font-size: large;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-}
 
-input {
-  border: none;
-  margin-top: 2px;
-  padding: 15px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 4px rgb(73, 73, 73, 0.3);
-  background-color: azure;
-}
-
-input::placeholder {
-  text-align: center;
-}
-
-select {
-  width: 100%;
-  height: 40px;
-  margin-top: 2px;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 10px;
-  border-style: none;
-  box-shadow: 2px 2px 4px rgb(73, 73, 73, 0.3);
-  background-color: azure;
-}
-
-
-option:first-child {
-  font-size: 13px;
-  color: rgba(0, 0, 0, 0.301);
-}
-
-option:first-child:focus {
-  background-color: white;
-  outline: none;
-}
-
-option:first-child:hover {
-  background-color: white;
-}
 
 #messageOutput{
   font-family: Arial, Helvetica, sans-serif;
@@ -133,4 +84,18 @@ option:first-child:hover {
   cursor: pointer;
   padding: 10px;
   margin-top: 2px;
+}
+
+.return {
+  display: block;
+  margin-top: 10px;
+  background-color: rgb(255, 196, 0);
+  padding: 10px;
+  border-style: none;
+  color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 4px rgb(73, 73, 73, 0.3);
+}
+
+a {
+  text-decoration: none;
 }
