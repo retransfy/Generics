@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="Calc.css" />
   </head>
   <body>
-    <form action="" onsubmit="calculateRate(event)">
-      <select name="currency" id="currency">
-        <option value="FCFA">TO FCFA</option>
-        <option value="GHS">TO GHS</option>
-      </select>
-      <input type="text" id="buyBN" name="buyBN" value="12.02" />
-      <input type="text" id="sellBN" name="sellBN" value="656.1" />
-      <input type="text" id="amount" name="amount" placeholder="Amount" value="1" />
-      <input type="text" id="paying" name="paying" placeholder="Paying" value="1" />
-      <p id="showrate" style="display: none"></p>
-      <p id="pnl" style="display: none"></p>
-      <button type="submit">Calculate</button>
-    </form>
-    <div class="ikons">
-      <a href="index.html"><span class="material-icons"> arrow_back_ios </span></a>
-      <span class="material-icons" id="refresh"> refresh </span>
-      <a href="index.html"><span class="material-icons"> arrow_forward_ios </span></a>
+    <div class="container">
+      <form action="" onsubmit="calculateRate(event)">
+        <select name="currency" id="currency">
+          <option value="FCFA">TO FCFA</option>
+          <option value="GHS">TO GHS</option>
+        </select>
+        <input type="text" id="buyBN" name="buyBN" value="12.02" />
+        <input type="text" id="sellBN" name="sellBN" value="656.1" />
+        <input type="text" id="amount" name="amount" placeholder="Amount" value="1" />
+        <input type="text" id="paying" name="paying" placeholder="Paying" value="1" />
+        <p id="showrate" style="display: none"></p>
+        <p id="pnl" style="display: none"></p>
+        <button type="submit">Calculate</button>
+      </form>
+      <div class="ikons">
+        <a href="index.html"><span class="material-icons"> arrow_back_ios </span></a>
+        <span class="material-icons" id="refresh"> refresh </span>
+        <a href="receipt.html"><span class="material-icons"> arrow_forward_ios </span></a>
+      </div>
     </div>
     <script src="Calc.js"></script>
   </body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retransfy</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="receiptold.css" />
+  </head>
+  <body>
+    <div id="container">
+      <img src="media/Logo.png" alt="Logo" class="logo" />
+      <p id="titled">
+        Sender-Name-Receiver-Name<br />
+        AmountReceived-AmountSent-Fee-TRX ID
+      </p>
+
+      <form action="" id="receipt">
+        <div class="timeCurrency">
+          <input type="time" id="theTime" step="1" lang="en" />
+          <select name="currency" id="currency">
+            <option value="FCFA">FCFA</option>
+            <option value="GHS">GHS</option>
+          </select>
+        </div>
+        <textarea name="receiptarea" id="receiptarea" cols="35" rows="8" autofocus></textarea>
+        <br />
+        <button type="submit" id="create">Create receipt</button>
+      </form>
+      <div id="receiptOutput"></div>
+      <button type="button" id="copyButton" style="display: none">Copy Receipt</button>
+      <br />
+      <a href="receipt.html"><button type="button" id="goBack" style="display: none">Go Back</button></a>
+      <div class="ikons">
+        <a href="receiptfull.html"><span class="material-icons"> arrow_back_ios </span></a>
+        <span class="material-icons" id="refresh"> refresh </span>
+        <a href="Calc.html"><span class="material-icons"> arrow_forward_ios </span></a>
+      </div>
+    </div>
+    <script src="receiptold.js"></script>
+  </body>
+</html>
