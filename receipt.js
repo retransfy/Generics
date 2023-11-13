@@ -14,10 +14,10 @@ const trxId = document.getElementById("trxid").value;
 
 let receiptText = "";
 if (Time && currency === "FCFA") {
-receiptText = `<p>Transaction successful.</p>
+receiptText = `<p>Transaction successful.\n
 You've just sent ${amountReceived.toLocaleString("fr-FR")} FCFA to  -  via Retransfy.
 Transaction ID: ${trxId} | ${formattedDate} | ${Time}. You paid a total of GHS ${totalPaid.toFixed(2)}, including a 
-transaction fee of GHS ${fee.toFixed(2)} via  -  .`;
+transaction fee of GHS ${fee.toFixed(2)} via  -  .</p>`;
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
 document.getElementById("copyButton").style.display = "block";
@@ -27,10 +27,10 @@ document.getElementById("receiptForm").style.display = "none";
 }
 
 else if (Time && currency === "GHS") {
-receiptText = `<p>Transaction successful.</p>
+receiptText = `<p>Transaction successful.\n
 You've just sent GHS ${amountReceived.toFixed(2)} to  -  via Retransfy.
 Transaction ID: ${trxId} | ${formattedDate} | ${Time}. You paid a total of ${totalPaid.toLocaleString("fr-FR")} FCFA, including a
-transaction fee of ${fee.toLocaleString("fr-FR")} FCFA via  -  .`;
+transaction fee of ${fee.toLocaleString("fr-FR")} FCFA via  -  </p>.`;
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
 document.getElementById("copyButton").style.display = "block";
